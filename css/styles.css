@@ -290,9 +290,20 @@ button {
   font-weight: 400;
 }
 
+.reminder-card h2 {
+  color: white;
+}
+
 .reminder-card p {
   margin: 0 0 18px;
   font-size: clamp(18px, 2.4vw, 25px);
+}
+
+.reminder-card a {
+  color: white;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
 }
 
 .details-section {
