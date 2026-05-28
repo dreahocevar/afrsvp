@@ -7,12 +7,12 @@ const revealImage = document.querySelector(".reveal-image");
 const inviteStates = [
   {
     src: "assets/images/ART.png",
-    alt: "Ilustracion de torta rosada con iniciales A y F",
-    label: "Ver invitacion formal",
+    alt: "Ilustración de torta rosada con iniciales A y F",
+    label: "Ver invitación formal",
   },
   {
     src: "assets/images/TEXT.png",
-    alt: "Invitacion formal de Ariam y Francisco",
+    alt: "Invitación formal de Ariam y Francisco",
     label: "Volver al sobre",
   },
 ];
