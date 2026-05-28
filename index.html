@@ -3,40 +3,164 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ari & Fran</title>
+    <title>Ariam & Francisco</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
-    <header class="site-header">
-      <nav class="nav">
-        <a href="index.html" class="logo">Ari & Fran</a>
-        <div class="nav-links">
-          <a href="info.html">Información</a>
-          <a href="rsvp.html" class="btn btn-outline">RSVP</a>
-        </div>
-      </nav>
-    </header>
+  <body class="home">
+    <a class="rsvp-tab" href="rsvp.html">RSVP</a>
 
     <main>
-      <section class="hero">
+      <section class="hero" aria-label="Ariam y Francisco se casan">
+        <img
+          class="hero-bg"
+          src="assets/images/HERO.png"
+          alt="Ariam y Francisco sentados en una terraza de cafe"
+        />
+        <div class="hero-shade"></div>
         <div class="hero-content">
+          <img
+            class="hero-monogram"
+            src="assets/icons/MONOGRAM.png"
+            alt="Monograma AF"
+          />
           <p class="eyebrow">Nos casamos</p>
-          <h1>Ari & Fran</h1>
-          <p class="subtitle">10 de octubre de 2026 · Madrid</p>
-          <div class="hero-actions">
-            <a href="rsvp.html" class="btn">Confirmar asistencia</a>
-            <a href="info.html" class="btn btn-secondary">Ver detalles</a>
+          <h1>Ariam &amp; Francisco</h1>
+          <p class="hero-date">Sabado 10 de octubre 2026</p>
+        </div>
+      </section>
+
+      <section class="open-invite">
+        <div class="section-inner">
+          <p class="script-heading">Estas invitado!</p>
+          <p class="small-note">Pincha el sobre para mas detalles</p>
+          <button
+            class="envelope-link"
+            type="button"
+            aria-controls="invite-reveal"
+            aria-expanded="false"
+          >
+            <img
+              src="assets/images/ENVELOPE.png"
+              alt="Sobre color vino con sello dorado"
+            />
+          </button>
+        </div>
+      </section>
+
+      <section class="invite-reveal" id="invite-reveal" hidden>
+        <div class="section-inner reveal-inner">
+          <img
+            class="art-image"
+            src="assets/images/ART.png"
+            alt="Ilustracion de torta rosada con iniciales A y F"
+          />
+          <img
+            class="text-image"
+            src="assets/images/TEXT.png"
+            alt="Invitacion formal de Ariam y Francisco"
+          />
+        </div>
+      </section>
+
+      <section class="story-section" id="invitacion">
+        <div class="section-inner story-inner">
+          <img
+            class="story-photo"
+            src="assets/images/INTRO.jpg"
+            alt="Ariam y Francisco caminando juntos por Paris"
+          />
+          <div class="story-copy">
+            <p>
+              Nos emociona celebrar este momento tan especial con nuestras
+              familias y amigos mas cercanos.
+            </p>
+            <p>
+              Aun nos cuesta creer lo lindo del camino recorrido, y cuanto
+              falta por vivirlo junto a ustedes.
+            </p>
+            <p>Con carino,</p>
+            <p class="signature">AF</p>
           </div>
         </div>
       </section>
 
-      <section class="intro container">
-        <h2>Estamos muy felices de celebrar este momento con ustedes.</h2>
-        <p>
-          Aquí podrán encontrar toda la información del evento y confirmar su
-          asistencia, así como indicarnos sus preferencias alimentarias o
-          cualquier detalle importante.
-        </p>
+      <section class="reminder-section" aria-label="Recordatorio">
+        <img
+          class="reminder-bg"
+          src="assets/images/REMINDER.png"
+          alt="Palacio Miraflores preparado para una celebracion"
+        />
+        <div class="reminder-card">
+          <h2>Recuerda</h2>
+          <p>
+            Los esperamos a celebrar este compromiso y compartir antes del gran
+            dia.
+          </p>
+          <p>
+            Te confirmaremos la ubicacion final y los detalles para reservar en
+            esta fecha.
+          </p>
+        </div>
+      </section>
+
+      <section class="details-section">
+        <div class="section-inner details-grid">
+          <article>
+            <h2>El itinerario</h2>
+            <p>
+              <strong>17:00 Ceremonia religiosa</strong><br />
+              Iglesia Parroquial de la Asuncion de Nuestra Senora
+            </p>
+            <p>
+              <strong>18:30 Coctel de bienvenida</strong><br />
+              Palacio de Miraflores
+            </p>
+            <p><strong>20:15 Cena</strong></p>
+            <p><strong>23:00 Fiesta</strong></p>
+          </article>
+
+          <article>
+            <h2>La Celebracion</h2>
+            <p>
+              <strong>Dress code</strong><br />
+              Formal elegante. El RSVP podra indicar alergias o preferencias
+              alimentarias especiales.
+            </p>
+            <p>
+              <strong>Cena de bienvenida</strong><br />
+              Espacio de recepcion
+            </p>
+            <p>
+              <strong>Aparcamiento y direccion</strong><br />
+              Palacio de Miraflores<br />
+              Ctra. Soto del Real, 1<br />
+              28792 Miraflores de la Sierra, Madrid
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="thanks-section">
+        <div class="thanks-copy">
+          <p>
+            Gracias por acompanarnos en este momento tan especial.
+          </p>
+          <p>
+            Nos llena de ilusion poder celebrarlo con tu presencia.
+          </p>
+          <p>Con carino,</p>
+          <p>Ariam &amp; Francisco</p>
+        </div>
+        <img
+          src="assets/images/THANKS.jpg"
+          alt="Ariam y Francisco brindando"
+        />
       </section>
     </main>
 
