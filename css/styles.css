@@ -217,7 +217,9 @@ button {
 }
 
 .story-section {
-  padding: clamp(70px, 10vw, 132px) 0;
+  --story-overlap: clamp(88px, 13vw, 170px);
+  position: relative;
+  padding: 0 0 clamp(70px, 10vw, 132px);
 }
 
 .story-inner {
@@ -226,7 +228,10 @@ button {
 }
 
 .story-photo {
+  position: relative;
+  z-index: 1;
   width: min(100%, 940px);
+  margin-top: calc(var(--story-overlap) * -1);
 }
 
 .story-copy,
@@ -396,6 +401,10 @@ button {
   .story-copy,
   .thanks-copy {
     font-size: clamp(30px, 8vw, 42px);
+  }
+
+  .story-section {
+    --story-overlap: 64px;
   }
 
   .reminder-section {
