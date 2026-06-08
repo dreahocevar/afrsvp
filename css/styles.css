@@ -53,6 +53,7 @@ button {
   transform: rotate(180deg);
   padding: 28px 16px;
   background: #f5d8d0;
+  border-radius: 10px 0 0 10px;
   color: var(--wine-dark);
   font-size: 20px;
   font-weight: 700;
@@ -252,10 +253,6 @@ button {
   margin: 0 0 28px;
 }
 
-.signature {
-  font-size: 0.9em;
-}
-
 .reminder-section {
   position: relative;
   min-height: 740px;
@@ -321,6 +318,18 @@ button {
   font-size: clamp(17px, 2vw, 24px);
 }
 
+.detail-item {
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(66, 16, 16, 0.28);
+}
+
+.details-grid a {
+  color: var(--wine);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
+
 .thanks-section {
   display: grid;
   grid-template-columns: minmax(280px, 1fr) minmax(280px, 1fr);
@@ -332,13 +341,6 @@ button {
   width: min(560px, calc(100% - 48px));
   margin: 0 auto;
   padding: 72px 0;
-}
-
-.signoff-monogram {
-  width: clamp(70px, 10vw, 120px);
-  height: auto;
-  margin: 0 auto;
-  filter: brightness(0) invert(1);
 }
 
 .thanks-section > img {
