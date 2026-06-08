@@ -138,7 +138,7 @@ button {
 }
 
 .hero-date {
-  color: #df8d9b;
+  color: var(--wine);
   font-weight: 700;
 }
 
