@@ -94,7 +94,7 @@ button {
   z-index: 1;
   display: grid;
   justify-items: center;
-  gap: 12px;
+  gap: clamp(16px, 2.4vw, 34px);
   padding: 24px;
 }
 
@@ -104,9 +104,9 @@ button {
 }
 
 .hero-arc {
-  width: clamp(170px, 25vw, 300px);
+  width: clamp(230px, 31vw, 420px);
   height: auto;
-  margin: -8px 0 -34px;
+  margin: -2px 0 -8px;
   overflow: visible;
   fill: white;
 }
@@ -115,7 +115,7 @@ button {
   font-family: "Spectral", Georgia, serif;
   font-size: 23px;
   font-weight: 600;
-  letter-spacing: 0.46em;
+  letter-spacing: 0.38em;
   text-anchor: middle;
   text-transform: uppercase;
 }
