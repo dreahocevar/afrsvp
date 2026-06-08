@@ -183,7 +183,7 @@ button {
 }
 
 .invite-reveal {
-  padding: 0 0 clamp(80px, 12vw, 150px);
+  padding: clamp(80px, 10vw, 140px) 0 clamp(130px, 18vw, 230px);
 }
 
 .invite-reveal[hidden] {
@@ -218,7 +218,7 @@ button {
 }
 
 .story-section {
-  --story-overlap: clamp(88px, 13vw, 170px);
+  --story-overlap: clamp(42px, 7vw, 92px);
   position: relative;
   padding: 0 0 clamp(70px, 10vw, 132px);
 }
@@ -417,7 +417,7 @@ button {
   }
 
   .story-section {
-    --story-overlap: 64px;
+    --story-overlap: 36px;
   }
 
   .reminder-section {
